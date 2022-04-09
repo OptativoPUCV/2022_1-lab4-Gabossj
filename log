@@ -1,0 +1,11 @@
+Sat Apr  9 19:46:59 HSP 2022: 
+ hashmap.c | 25 +++++++++++++++++++++++--
+ 1 file changed, 23 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:78:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2a07b12
