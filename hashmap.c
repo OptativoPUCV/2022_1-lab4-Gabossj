@@ -43,7 +43,7 @@ void insertMap(HashMap * map, char * key, void * value) {
     Pair *newData = createPair(key, value);
     long i = hash (key, map ->capacity);
 
-    if(!(map -> buckets[i])){//(map -> buckets[i] != NULL){
+    if((map -> buckets[i]) != NULL){
         map -> buckets[i] = newData;
         (map-> size)++;
     }
