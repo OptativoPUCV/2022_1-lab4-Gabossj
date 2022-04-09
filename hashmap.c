@@ -51,7 +51,7 @@ void insertMap(HashMap * map, char * key, void * value) {
         while(map -> buckets[i]){
             i++;
             if (i == map -> capacity) i=0;
-            if(!(map -> buckets[i])){//!= NULL){
+            if(!(map -> buckets[i])){
                 map -> buckets[i] = newData;
                 (map-> size)++;
                 break;
