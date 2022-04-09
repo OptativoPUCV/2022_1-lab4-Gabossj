@@ -70,10 +70,6 @@ void enlarge(HashMap * map) {
 
 
 HashMap * createMap(long capacity) {
-    /*Hashmap* nuevo =(Hashmap *) malloc(sizeof(Hashmap));
-    nuevo -> size = 0;
-    nuevo -> capacity = */
-
     return NULL;
 }
 
