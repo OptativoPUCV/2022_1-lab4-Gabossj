@@ -93,11 +93,12 @@ void eraseMap(HashMap * map,  char * key) {
     long i = hash(key, map -> capacity);
     while(map-> buckets[i] != NULL){
         if (is_equal(map -> buckets[i] -> key, key) == 1){
-            map -> buckets = NULL;
             map -> current = i;
+            map -> size = map -> size -1;
+            map -> buckets[i] -> key = NULL;
             break;
         }
-        else i++;
+        i++;
     }
     //map -> current = i;
 
