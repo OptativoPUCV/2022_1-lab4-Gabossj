@@ -122,14 +122,21 @@ Pair * firstMap(HashMap * map) {
         if(map -> buckets[i]){
             if ((map -> buckets[i] -> key) && (map -> buckets[i] -> value)){
                 map -> current = i;
+                return map -> buckets[i];
             }
         }
-        return map -> buckets[i];
     }
     return NULL;
 }
 
 Pair * nextMap(HashMap * map) {
-
+for (int i=0; i < map -> capacity; i++){
+        if(map -> buckets[i+1]){
+            if ((map -> buckets[i+1] -> key) && (map -> buckets[i+1] -> value)){
+                map -> current = (i+1);
+                return map -> buckets[i+1];
+            }
+        }
+    }
     return NULL;
 }
