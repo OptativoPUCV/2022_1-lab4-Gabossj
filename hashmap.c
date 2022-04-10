@@ -99,9 +99,9 @@ void eraseMap(HashMap * map,  char * key) {
         }
         else i++;
     }
-    map -> current = i;
-    
-    return map -> buckets[i];
+    //map -> current = i;
+
+    //return map -> buckets[i];
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   

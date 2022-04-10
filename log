@@ -112,3 +112,8 @@ hashmap.c:91:6: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2366d7c
+Sun Apr 10 17:36:25 HSP 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+e4dcb0c
