@@ -62,8 +62,19 @@ void insertMap(HashMap * map, char * key, void * value) {
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
+    
+    /*
+    ------------
+    (map -> capacity) = 2 * (map -> capacity);
 
+    */
 
+    /*  duplicar map capac
+        aux_array = hashArray
+        map->hash array = calloc capac
+        map-> size = 0
+        recorrer aux_array reinsertar elementos
+    */
 }
 
 
@@ -84,8 +95,17 @@ void eraseMap(HashMap * map,  char * key) {
 
 Pair * searchMap(HashMap * map,  char * key) {   
 
-
-    return NULL;
+    long pos = hash(key,map -> capacity);
+    while(!(map->buckets[pos])){ 
+    //do{
+        if (is_equal(map -> buckets[pos] -> key,key ) == 1){
+            map -> current = pos;
+            break;
+        }
+        else pos++;
+    }
+    //}while(map -> buckets[pos]);
+    return map -> buckets[pos];
 }
 
 Pair * firstMap(HashMap * map) {
