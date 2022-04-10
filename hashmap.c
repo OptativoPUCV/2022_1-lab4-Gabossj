@@ -100,9 +100,6 @@ void eraseMap(HashMap * map,  char * key) {
         }
         i++;
     }
-    //map -> current = i;
-
-    //return map -> buckets[i];
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
