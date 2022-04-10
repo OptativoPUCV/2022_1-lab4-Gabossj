@@ -56,3 +56,9 @@ hashmap.c:72:22: error: assignment from incompatible pointer type [-Werror=incom
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e99348c
+Sat Apr  9 20:12:56 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|4
+total_score: 30/70
+2a24772

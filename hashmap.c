@@ -69,11 +69,11 @@ void enlarge(HashMap * map) {
 
 HashMap * createMap(long capacity) {
     HashMap *nuevo = (HashMap*) malloc(sizeof(HashMap));
-    nuevo -> buckets = (Pair*) calloc(capacity, sizeof(Pair));
+    nuevo -> buckets = (Pair**) calloc(capacity, sizeof(Pair*));
     nuevo -> size = 0;
     nuevo -> capacity = capacity;
     nuevo -> current = -1;
-    
+
     return nuevo;
 }
 
