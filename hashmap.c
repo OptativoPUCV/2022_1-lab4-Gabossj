@@ -88,23 +88,35 @@ HashMap * createMap(long capacity) {
     return nuevo;
 }
 
-void eraseMap(HashMap * map,  char * key) {    
+void eraseMap(HashMap * map,  char * key) {  
 
-
+    long i = hash(key, map -> capacity);
+    while(map-> buckets[i] != NULL){
+        if (is_equal(map -> buckets[i] -> key, key) == 1){
+            map -> buckets = NULL;
+            map -> current = i;
+            break;
+        }
+        else i++;
+    }
+    map -> current = i;
+    
+    return map -> buckets[i];
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
 
-    long pos = hash(key,map -> capacity);
-    do{
-        if (is_equal(map -> buckets[pos] -> key,key ) == 1){
-            map -> current = pos;
+    long i = hash(key,map -> capacity);
+    while(map-> buckets[i] != NULL){
+        if (is_equal(map -> buckets[i] -> key,key ) == 1){
+            map -> current = i;
             break;
         }
-        else pos++;    
-    }while(map -> buckets[pos]);
+        else i++;  
+    }
+    map -> current = i;
 
-    return map -> buckets[pos];
+    return map -> buckets[i];
 }
 
 Pair * firstMap(HashMap * map) {
