@@ -96,14 +96,17 @@ void eraseMap(HashMap * map,  char * key) {
 Pair * searchMap(HashMap * map,  char * key) {   
 
     long pos = hash(key,map -> capacity);
-    do{
+    while(!(map->buckets[pos])){
+    //do{
         if (is_equal(map -> buckets[pos] -> key,key ) == 1){
             map -> current = pos;
             break;
         }
         else pos++;
-    }while(map -> buckets[pos]);
     
+    }
+    //}while(map -> buckets[pos]);
+
     return map -> buckets[pos];
 }
 
