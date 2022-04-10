@@ -130,7 +130,7 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-for (int i=0; i < map -> capacity; i++){
+for (int i = map -> current ; i < map -> capacity; i++){
     if((map -> buckets[i+1]) && (map -> buckets[i+1] -> key) && (map -> buckets[i+1] -> value )){
         map -> current = (i+1);
         return map -> buckets[i+1];
