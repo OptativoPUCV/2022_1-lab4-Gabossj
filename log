@@ -448,3 +448,10 @@ Sun Apr 10 21:44:08 HSP 2022:
  tests:  12|2
 total_score: 50/70
 5c0d75e
+Sun Apr 10 23:08:46 HSP 2022: 
+ hashmap.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.out: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+c81e0fd
