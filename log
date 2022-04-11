@@ -501,3 +501,10 @@ C:\Users\gabop\AppData\Local\Temp\ccw3W2KB.o:test.c:(.text+0x1353): undefined re
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 dd55d6f
+Sun Apr 10 23:26:56 HSP 2022: 
+ hashmap.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.out: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+25846a2
