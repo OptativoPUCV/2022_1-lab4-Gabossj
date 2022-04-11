@@ -62,26 +62,7 @@ void insertMap(HashMap * map, char * key, void * value) {
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
-    
-    // int capacityMax = map -> capacity;
-    // Pair** oldBuckets = map -> buckets;
-    // map ->capacity = (map ->capacity) *2;
-    // map-> buckets = (Pair**)malloc(capacityMax* sizeof(Pair*));
-    // map -> size = 0;
-    // // map -> capacity = capacityMax;
-    // // map -> current = -1;
-
-    // for (int i=0; i < capacityMax; i++){
-    //     if (oldBuckets[i] != NULL){
-    //         insertMap(map, oldBuckets[i]-> key, oldBuckets[i] -> value);
-    //     }
-    // }
-    // free (oldBuckets);
-    
-    /*
-    ------------
-    (map -> capacity) = 2 * (map -> capacity);
-    */
+        
     /*  duplicar map capac
         aux_array = hashArray
         map->hash array = calloc capac
