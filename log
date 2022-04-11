@@ -490,3 +490,14 @@ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot ope
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 84ac787
+Sun Apr 10 23:24:52 HSP 2022: 
+ hashmap.c | 35 ++++++++++++++++-------------------
+ 1 file changed, 16 insertions(+), 19 deletions(-)
+C:\Users\gabop\AppData\Local\Temp\ccw3W2KB.o:test.c:(.text+0x1177): undefined reference to `firstMap'
+C:\Users\gabop\AppData\Local\Temp\ccw3W2KB.o:test.c:(.text+0x1214): undefined reference to `firstMap'
+C:\Users\gabop\AppData\Local\Temp\ccw3W2KB.o:test.c:(.text+0x1299): undefined reference to `nextMap'
+C:\Users\gabop\AppData\Local\Temp\ccw3W2KB.o:test.c:(.text+0x130d): undefined reference to `nextMap'
+C:\Users\gabop\AppData\Local\Temp\ccw3W2KB.o:test.c:(.text+0x1353): undefined reference to `nextMap'
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+dd55d6f

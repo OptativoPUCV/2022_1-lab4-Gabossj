@@ -63,7 +63,6 @@ void insertMap(HashMap * map, char * key, void * value) {
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
     
-    /*
     int capacityMax = map -> capacity * 2;
     Pair** oldBuckets = map -> buckets;
     map-> buckets = (Pair**)malloc(capacityMax* sizeof(Pair*));
@@ -77,14 +76,11 @@ void enlarge(HashMap * map) {
             break;
         }
     }
-    */
-
+    
     /*
     ------------
     (map -> capacity) = 2 * (map -> capacity);
-
     */
-
     /*  duplicar map capac
         aux_array = hashArray
         map->hash array = calloc capac
@@ -133,27 +129,26 @@ Pair * searchMap(HashMap * map,  char * key) {
     return map -> buckets[i];
 }
 
-//Pair * firstMap(HashMap * map) {
-    /*
-    for(long i = 0 ; i < map -> size; i++){
-        if(map->buckets[i]!=NULL && map->buckets[i]->key!=NULL){
-            map -> current = i;
-            return map -> buckets[i];
-        }
-        return map -> buckets[i];
-    }
-    */
-    //return NULL;
-//}
+// Pair * firstMap(HashMap * map) {
+    
+//     for(long i = 0 ; i < map -> size; i++){
+//         if(map->buckets[i]!=NULL && map->buckets[i]->key!=NULL){
+//             map -> current = i;
+//             return map -> buckets[i];
+//         }
+//         return map -> buckets[i];
+//     }
+//     return NULL;
+// }
 
-//Pair * nextMap(HashMap * map) {
-    /*
-    for(long i = map -> current ; i < map -> capacity ; i++){
-        if(map->buckets[i]!=NULL && map->buckets[i]->key !=NULL){
-            map -> current = (i + 1);
-            return map -> buckets[i];
-        }
-    }
-    */
-    //return NULL;
-//}
+// Pair * nextMap(HashMap * map) {
+    
+//     for(long i = map -> current ; i < map -> capacity ; i++){
+//         if(map->buckets[i]!=NULL && map->buckets[i]->key !=NULL){
+//             map -> current = (i + 1);
+//             return map -> buckets[i];
+//         }
+//     }
+    
+//     return NULL;
+// }
