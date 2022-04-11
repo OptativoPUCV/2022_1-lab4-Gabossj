@@ -63,19 +63,19 @@ void insertMap(HashMap * map, char * key, void * value) {
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
     
-    int capacityMax = map -> capacity * 2;
-    Pair** oldBuckets = map -> buckets;
-    map-> buckets = (Pair**)malloc(capacityMax* sizeof(Pair*));
-    map -> size = 0;
-    map -> capacity = capacityMax;
-    map -> current = -1;
+    // int capacityMax = map -> capacity * 2;
+    // Pair** oldBuckets = map -> buckets;
+    // map-> buckets = (Pair**)malloc(capacityMax* sizeof(Pair*));
+    // map -> size = 0;
+    // map -> capacity = capacityMax;
+    // map -> current = -1;
 
-    for (int i=0; i < capacityMax; i++){
-        if (oldBuckets[i]){
-            insertMap(map, oldBuckets[i]-> key, oldBuckets[i] -> value);
-            break;
-        }
-    }
+    // for (int i=0; i < capacityMax; i++){
+    //     if (oldBuckets[i]){
+    //         insertMap(map, oldBuckets[i]-> key, oldBuckets[i] -> value);
+    //         break;
+    //     }
+    // }
     
     /*
     ------------
