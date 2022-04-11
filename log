@@ -455,3 +455,17 @@ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot ope
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 c81e0fd
+Sun Apr 10 23:09:39 HSP 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:77:6: error: "/*" within comment [-Werror=comment]
+     }/*
+       
+hashmap.c:79:5: error: "/*" within comment [-Werror=comment]
+     /*
+      
+cc1.exe: all warnings being treated as errors
+Compilation failed
+1c6a924
