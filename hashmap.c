@@ -133,7 +133,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     return map -> buckets[i];
 }
 
-Pair * firstMap(HashMap * map) {
+//Pair * firstMap(HashMap * map) {
     /*
     for(long i = 0 ; i < map -> size; i++){
         if(map->buckets[i]!=NULL && map->buckets[i]->key!=NULL){
@@ -143,10 +143,10 @@ Pair * firstMap(HashMap * map) {
         return map -> buckets[i];
     }
     */
-    return NULL;
-}
+    //return NULL;
+//}
 
-Pair * nextMap(HashMap * map) {
+//Pair * nextMap(HashMap * map) {
     /*
     for(long i = map -> current ; i < map -> capacity ; i++){
         if(map->buckets[i]!=NULL && map->buckets[i]->key !=NULL){
@@ -155,5 +155,5 @@ Pair * nextMap(HashMap * map) {
         }
     }
     */
-    return NULL;
-}
+    //return NULL;
+//}
