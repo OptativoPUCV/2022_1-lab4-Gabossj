@@ -469,3 +469,10 @@ hashmap.c:79:5: error: "/*" within comment [-Werror=comment]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 1c6a924
+Sun Apr 10 23:12:14 HSP 2022: 
+ hashmap.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.out: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+2fb9829
