@@ -63,6 +63,7 @@ void insertMap(HashMap * map, char * key, void * value) {
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
     
+    /*
     int capacityMax = map -> capacity * 2;
     Pair** oldBuckets = map -> buckets;
     map-> buckets = (Pair**)malloc(capacityMax* sizeof(Pair*));
@@ -76,6 +77,7 @@ void enlarge(HashMap * map) {
             break;
         }
     }
+    */
 
     /*
     ------------
