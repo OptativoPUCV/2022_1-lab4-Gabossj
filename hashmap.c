@@ -132,8 +132,9 @@ Pair * nextMap(HashMap * map) {
     for(long i = map -> current ; i < map -> capacity ; i++){
         if(map->buckets[i]!=NULL && map->buckets[i]->key !=NULL){
         map -> current = (i + 1);
-        return map -> buckets[i+1];
+        //return map -> buckets[i+1];
         }
+        return map -> buckets[i];
     }
     return NULL;
 }
